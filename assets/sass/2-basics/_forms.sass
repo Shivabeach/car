@@ -1,0 +1,45 @@
+/*forms*/
+button[type='submit'],
+button[type='reset']
+  border-radius: 4px
+  background-color: $color--peach-orange
+  color: $primarytext
+  margin: 0 5px
+  padding: 0 5px
+
+fieldset
+  border: 1px solid $antique-ruby
+
+legend
+  padding: 1em
+  color: $soft-peach-dark
+
+select
+  width: 50%
+
+
+
+input::placeholder
+  color: red
+  opacity: 0.75
+  letter-spacing: 2px
+  text-transform: capitalize
+  text-indent: 2em
+  font-variant: small-caps
+  font-weight: 700
+
+
+input::-moz-placeholder
+  color: red
+  opacity: 0.75
+  letter-spacing: 2px
+  text-transform: capitalize
+  text-indent: 2em
+  font-variant: small-caps
+  font-weight: 700
+
+input:focus
+  background: yellow
+  font-style: italic
+  &::placeholder
+    line-height: 13

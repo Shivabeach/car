@@ -1,0 +1,36 @@
+/* Containers */
+
+@charset "UTF-8"
+
+.container
+  display: flex
+  width: 100%
+  margin: 0 auto
+  &--left
+    width: 300px
+    +tablet
+      width: 100%
+    +mobile
+      width: 100%
+  &--main
+    flex: 2.5 1
+    +tablet
+      width: 100%
+    +mobile
+      width: 100%
+  &--right
+    flex: 1 1
+    +tablet
+      width: 100%
+    +mobile
+      width: 100%
+  &--inner //skeleton
+    margin: 1rem
+    border-radius: $base-border-radius
+    border-right-color: $brown
+    border-right-width: 2px
+    border-right-style: solid
+    border-bottom: $brown 2px solid
+
+.flex
+  display: flex

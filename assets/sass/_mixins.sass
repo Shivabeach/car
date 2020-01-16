@@ -1,0 +1,70 @@
+// for flex containers only
+=center($value, $value2)
+	display: flex
+	justify-content: $value
+	align-items: $value2
+
+=desktop
+	@media screen and (min-width: $desktop)
+		@content
+
+=tablet
+	@media screen and (min-width: $tablet) and (max-width: $desktop - 1px)
+		@content
+
+=mobile
+	@media screen and (max-width: $tablet - 1px)
+		@content
+
+=retina
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
+		@content
+
+=border($pixel, $type, $color, $rad)
+	border-width: $pixel
+	border-style: $type
+	border-color: $color
+	border-radius: $rad
+
+=grid($cols, $mgn)
+	float:left
+	margin-right: $mgn
+	margin-bottom: $mgn
+	width: (100 - ($cols - 1) * $mgn) / $cols
+
+	&:nth-child(#{$cols}n)
+		margin-right: 0
+
+=simple-grad($color1, $color2)
+	background: linear-gradient($color1, $color2)
+
+=angle-grad($angle, $color, $color1)
+	background: linear-gradient($angle, $color, $color1)
+
+=bodys
+	min-height: 100vh
+	scroll-behavior: smooth
+	text-rendering: optimizeSpeed
+	-moz-osx-font-smoothing: grayscale
+	-webkit-font-smoothing: antialiased
+	line-height: $base-line-height
+
+=linx ($link, $visit, $hover, $active, $bg)
+	a
+		color: $link
+		text-decoration: none
+		&:visited
+			color: $visit
+		&:hover
+			color: $hover
+			text-decoration: underline
+		&:active
+			color: $active
+			background: $bg
+
+=height1($size)
+	height: $size
+
+=set-background($color)
+	background-color: $color
+	color: set-text-color($color)

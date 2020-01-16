@@ -1,0 +1,22 @@
+@charset "UTF-8"
+/* Links */
+a
+  color: teal
+  text-decoration: none
+  transition: color $base-duration $base-timing
+  font-family: $font-stack-lucida-grande
+
+  &:visited
+    background-color: $zest
+    color: $visited
+    text-decoration: overline
+    font-family: $font-stack-garamond
+
+  &:hover
+    color: $hover
+    background-color: $orange2
+    border-bottom: 2px solid $green6
+
+  &:focus, :active
+    color: $gold
+    text-shadow: 1px 1px 3px black
