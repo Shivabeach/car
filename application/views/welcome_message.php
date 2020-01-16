@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>Welcome to CodeIgniter</title>
-
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/ui-darkness/jquery-ui.css" media="print" onload="this.media='all'">
 	<style type="text/css">
 
 	::selection { background-color: #E13300; color: white; }
@@ -87,3 +87,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 </body>
 </html>
+<script defer src="<?php echo base_url('node_modules/jquery/dist/jquery.min.js');?>"></script>
+<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="  crossorigin="anonymous"></script>
+<script defer src="<?php echo base_url('assets/js/script.js');?>"></script>
