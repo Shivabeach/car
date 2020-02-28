@@ -1,20 +1,22 @@
 @charset "UTF-8"
 /* Links */
 a
-  color: teal
+  color: $zest
   text-decoration: none
   transition: color $base-duration $base-timing
   font-family: $font-stack-lucida-grande
+  text-shadow: 1px 1px 1px $orange
 
   &:visited
-    background-color: $zest
-    color: $visited
+    //background-color: $zest
+    color: #a4acb7
+    text-shadow: 1px 1px 1px $ignore
     text-decoration: overline
-    font-family: $font-stack-garamond
+    font-family: 'Fredoka One', cursive
 
   &:hover
-    color: $hover
-    background-color: $orange2
+    color: $md-lime-a200
+    //background-color: $orange2
     border-bottom: 2px solid $green6
 
   &:focus, :active

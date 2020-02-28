@@ -1,14 +1,27 @@
 /*Cards */
 
-.card1
+.card
   flex: 1
-  border-bottom: 1px solid $brown
-  border-right: 1px solid $moon-raker
+  margin: 1rem
   padding: 1rem 2rem
+  min-width: 20%
+  min-height: 100px
   display: flex
   border-radius: $base-border-radius
 
-  +center(center, center)
+  &--inside
+    padding: 5px
+    width: 100%
+    p
+      font-size: 1.1vw
+
+    &-header
+      border-radius: $base-border-radius
+      display: flex
+      min-height: 4rem
+      width: 100%
+      +center(center, center)
+      margin-bottom: 1rem
 
 .card2
   flex: 1

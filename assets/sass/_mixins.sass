@@ -65,6 +65,15 @@
 =height1($size)
 	height: $size
 
+@function set-color($color)
+	@if (lightness($color) > 40)
+		@return #212529 // Lighter background, return dark color
+	@else
+		@return #efebe9 // Darker background, return light color
+
 =set-background($color)
 	background-color: $color
 	color: set-text-color($color)
+
+=gradient($angle, $color, $color1)
+	background: linear-gradient($angle, $color, $color1)

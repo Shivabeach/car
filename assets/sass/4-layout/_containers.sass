@@ -4,22 +4,27 @@
 
 .container
   display: flex
-  width: 100%
+  width: 90%
   margin: 0 auto
   &--left
-    width: 300px
+    flex: 1
+
+    min-width: 300px
     +tablet
       width: 100%
     +mobile
       width: 100%
   &--main
-    flex: 2.5 1
+    flex: 3
+    display: flex
+    flex-wrap: wrap
     +tablet
       width: 100%
     +mobile
       width: 100%
   &--right
     flex: 1 1
+    display: flex
     +tablet
       width: 100%
     +mobile
