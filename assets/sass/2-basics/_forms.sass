@@ -1,12 +1,4 @@
 /*forms*/
-button[type='submit'],
-button[type='reset']
-  border-radius: 4px
-  background-color: $color--peach-orange
-  color: $primarytext
-  margin: 0 5px
-  padding: 0 5px
-
 fieldset
   border: 1px solid $antique-ruby
 
@@ -17,9 +9,15 @@ legend
 select
   width: 50%
 
+textarea
+  width: 100%
+
+input
+  height: 2.5em
 
 
-input::placeholder
+input::placeholder,
+textarea::placeholder
   color: red
   opacity: 0.75
   letter-spacing: 2px
@@ -59,4 +57,5 @@ input:focus
 
 .formControl.error input
   border-color: $red
+
 
