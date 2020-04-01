@@ -1,0 +1,25 @@
+ /** Theme colors */
+body
+  background: $bk
+
+.container
+  +gradient(45deg, map-get($brownish, "dark"), map-get($brownish, "hi-light"))
+  color: map-get($theme, "secondary")
+.card
+  background-color: map-get($theme, "secondary")
+  //color: map-get($theme, "main")
+  color: set-color(map-get($theme, "secondary"))
+  border-bottom: 1px solid $brown
+  border-right: 1px solid $moon-raker
+  box-shadow: 8px 4px 2px $secondary
+
+  &--inside
+    &-header
+      background: map-get($theme, "accent")
+      //color: map-get($theme, "color")
+      color: set-color(map-get($theme, "accent"))
+      text-shadow: 2px 2px 2px $theme-color
+
+header
+  color: $eggs
+  text-shadow: 1px 1px white
