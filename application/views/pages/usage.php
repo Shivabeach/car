@@ -25,12 +25,12 @@
                 <th class="center">Full Ounces</th>
                 <th class="center">Ratio</th>
                 <th class="center">Material</th>
-                <th class="center">Liquid</th>
+                <th class="center">Water</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="center">Hydro Foam</td>
+                <td class="center">Hydro Foam Kims Car</td>
                 <td class="center">Foam Cannon</td>
                 <td class="center">28</td>
                 <td class="center">1 : 9</td>
@@ -47,11 +47,19 @@
               </tr>
               <tr>
                 <td class="center">Griots Surface Wash</td>
-                <td class="center">Foam Cannon</td>
+                <td class="center">Foam Cannon #3</td>
                 <td class="center">30</td>
                 <td class="center">1 : 13</td>
                 <td class="center">2</td>
                 <td class="center">28</td>
+              </tr>
+              <tr>
+                <td class="center">Angelwax Fast Foam</td>
+                <td class="center">Foam Cannon #3</td>
+                <td class="center">30</td>
+                <td class="center">1 : 9</td>
+                <td class="center">3</td>
+                <td class="center">27</td>
               </tr>
             </tbody>
           </table>

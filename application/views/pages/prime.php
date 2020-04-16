@@ -43,7 +43,7 @@
       <div class="card">
         <div class="card--inside">
           <div class="card--inside-header fs-4" id="<?=$row->id;?>"><?=$row->heading;?></div>
-          <?php echo "<h5>" . nice_date($row->date, 'F d, Y') . "</h5>";?>
+          <?php echo "<h5 class='date'>" . nice_date($row->date, 'F d, Y') . "</h5>";?>
           <?php echo $this->typography->auto_typography($row->content);?>
         </div>
       </div>

@@ -30,6 +30,7 @@
             <li><b>Carpro</b> Hydro2</li>
             <li><b>Carpro</b> Hydro2 Foam</li>
             <li><b>Carpro</b> Reload</li>
+            <li>3.0 <b>Carpro</b> CQuartz Ceramic</li>
           </ol>
         </div>
       </div>
@@ -100,6 +101,7 @@
               <li>Meguiars Professional Detail Clay</li>
               <li>Optimum Ferrex</li>
               <li>Krud Kutter</li>
+              <li>Poorboy's Strip Down Decon Pre-Wash</li>
             </ol>
         </div>
       </div>

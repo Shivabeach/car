@@ -1,4 +1,5 @@
 <body id="purchase">
+  <!-- onload="addExpenseToList()" -->
   <header>
     <hgroup>
       <h1><?=$header;?></h1>
@@ -20,11 +21,12 @@
 	  <div class="card">
 	    <div class="card--inside">
 	      <div class="card--inside-header fs-4"></div>
-	      <p>content</p>
+	      <p></p>
 	      <table>
           <thead>
             <tr>
               <th>Needed</th>
+              <th>Usage</th>
               <th>Delete</th>
             </tr>
           </thead>
@@ -52,7 +54,15 @@
        			"class" => "input-full"
        		];
        		echo form_input($product);
-
+          echo "<br>";
+          $why = [
+            "name" => "reason",
+            "id" => "reason",
+            "placeholder" => "Product usage",
+            "class" => "input-full"
+          ];
+          echo form_input($why);
+          echo "<br>";
        		echo "<div>";
        		echo "<button type='submit' value='Submit'>Submit</button>";
        		echo "</div>";
