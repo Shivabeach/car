@@ -20,7 +20,7 @@
   <div class="container--main"> <!-- middle or right container -->
 	  <div class="card">
 	    <div class="card--inside">
-	      <div class="card--inside-header fs-4"></div>
+	      <div class="card--inside-header fs-4">Wanted or Needed Product</div>
 	      <p></p>
 	      <table>
           <thead>
@@ -31,9 +31,8 @@
             </tr>
           </thead>
           <tbody class="disp">
-
-        </tbody>
-      </table>
+          </tbody>
+        </table>
 	    </div>
 	  </div>
 
@@ -48,18 +47,18 @@
        		];
        		echo form_open("", $form);
        		$product = [
-       			"name" => "product",
-       			"id" => "product",
-       			"placeholder" => "Product Needed",
-       			"class" => "input-full"
+             "name"        => "product",
+             "id"          => "product",
+             "placeholder" => "Product Needed",
+             "class"       => "input-full"
        		];
        		echo form_input($product);
           echo "<br>";
           $why = [
-            "name" => "reason",
-            "id" => "reason",
+            "name"        => "reason",
+            "id"          => "reason",
             "placeholder" => "Product usage",
-            "class" => "input-full"
+            "class"       => "input-full"
           ];
           echo form_input($why);
           echo "<br>";

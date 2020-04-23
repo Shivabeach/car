@@ -16,6 +16,6 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
 integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="  crossorigin="anonymous"></script>
 <script defer src="<?php echo base_url('assets/js/script.js');?>"></script>
-<script defer src="<?php echo base_url('assets/js/purch.js');?>"></script>
+<script defer src="<?php echo base_url('assets/js/purch.min.js');?>"></script>
 </body>
 </html>

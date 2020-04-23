@@ -889,10 +889,20 @@ body {
   .card--inside-header {
     background: #30997A;
     color: #efebe9;
-    text-shadow: 2px 2px 2px #fdb1e8; }
+    text-shadow: 2px 2px 2px #000; }
 
 header {
   color: #b2864f;
   text-shadow: 1px 1px white; }
+
+a.btn {
+  color: #1a237e; }
+  a.btn:visited {
+    color: #7986cb;
+    text-decoration: underline; }
+  a.btn:hover {
+    color: #512da8; }
+  a.btn:active {
+    color: #d500f9; }
 
 /*# sourceMappingURL=main.css.map */

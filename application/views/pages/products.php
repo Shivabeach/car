@@ -102,6 +102,7 @@
               <li>Optimum Ferrex</li>
               <li>Krud Kutter</li>
               <li>Poorboy's Strip Down Decon Pre-Wash</li>
+              <li>Carpro Trix Iron Remover</li>
             </ol>
         </div>
       </div>

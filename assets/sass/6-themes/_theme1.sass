@@ -18,8 +18,21 @@ body
       background: map-get($theme, "accent")
       //color: map-get($theme, "color")
       color: set-color(map-get($theme, "accent"))
-      text-shadow: 2px 2px 2px $theme-color
+      text-shadow: 2px 2px 2px $black
 
 header
   color: $eggs
   text-shadow: 1px 1px white
+
+a.btn
+  color: $md-indigo-900
+
+  &:visited
+    color: $md-indigo-300
+    text-decoration: underline
+
+  &:hover
+    color: $md-deep-purple-700
+
+  &:active
+    color: $md-purple-a400
