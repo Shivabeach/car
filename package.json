@@ -7,7 +7,7 @@
   "author": "<shiva@shivabeach.com>",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
