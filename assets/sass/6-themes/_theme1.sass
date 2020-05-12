@@ -1,23 +1,24 @@
- /** Theme colors */
+/** Theme colors */
 body
   background: $bk
 
 .container
-  +gradient(45deg, map-get($brownish, "dark"), map-get($brownish, "hi-light"))
-  color: map-get($theme, "secondary")
+  background: map-get($vintage, "dark")
+  //+gradient(45deg, map-get($brownish, "dark"), map-get($brownish, "hi-light"))
+  color: map-get($vintage, "sec-text")
 .card
-  background-color: map-get($theme, "secondary")
+  background-color: map-get($vintage, "accent")
   //color: map-get($theme, "main")
-  color: set-color(map-get($theme, "secondary"))
+  color: set-color(map-get($vintage, "accent"))
   border-bottom: 1px solid $brown
   border-right: 1px solid $moon-raker
-  box-shadow: 8px 4px 2px $secondary
+  box-shadow: 8px 4px 2px map-get($vintage, "sec-text")
 
   &--inside
     &-header
-      background: map-get($theme, "accent")
+      background: map-get($vintage, "text")
       //color: map-get($theme, "color")
-      color: set-color(map-get($theme, "accent"))
+      color: set-color(map-get($vintage, "text"))
       text-shadow: 2px 2px 2px $black
 
 header
@@ -36,3 +37,14 @@ a.btn
 
   &:active
     color: $md-purple-a400
+
+//tables
+td
+  background: map-get($vintage, "lt-bg")
+  color: map-get($vintage, "text")
+  font-weight: 800
+
+input::placeholder,
+textarea::placeholder
+  color: map-get($vintage, "text")
+  font-weight: 900

@@ -72,6 +72,25 @@
 	     	<div class="card--inside">
 	       	<div class="card--inside-header fs-4">Response</div>
 	       	<div class="display success"></div>
+          <form>
+            <div class="input-row">
+              <label for="ounces">Number of Ounces To Fill</label>
+              <input class="input-med" type="number" id="ounces" />
+            </div>
+            <div class="input-row">
+              <label for="ratio">Ratio Required 1: ? </label>
+              <input class="input-med" type="number" id="ratio">
+            </div>
+            <input type="submit" class="none" id="cripes" value="Submit">
+            <input type="reset" class="none" value="Do Over" id="reset1">
+          </form>
+            <div class="input-row">
+              <div id="validity"></div>
+              <p class="emp">Dilutable Material <span class="bold-10 bold-blue" id="materialAmount"> </span> </p>
+            </div>
+            <div class="input-row">
+              <p class="emp">Water <span class="bold-10 bold-blue" id="dilutionAmount"> </span> </p>
+            </div>
 	      </div>
 	    </div>
 	  </div>

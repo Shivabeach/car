@@ -1,4 +1,7 @@
 // response requires an ID
+let materialAmount = document.getElementById("materialAmount");
+let dilutionAmount = document.getElementById("dilutionAmount");
+
 $(function() {
   $("form#ajax").on("submit", function(e) {
     "use strict";
@@ -70,3 +73,25 @@ $(function() {
     dateFormat: "yy-mm-dd"
   });
 });
+
+(function() {
+  "use strict";
+  let cripes = document.querySelector("#cripes")
+  if (cripes != null) {
+  cripes.addEventListener("click", event => {
+  var ratio = document.getElementById("ratio").value;
+  var ounces = document.getElementById("ounces").value;
+  if (ratio === "" || ratio <= 0 || ounces === "" || ounces <= 0) {
+    event.preventDefault();
+    alert("Lets imput some numbers");
+    return false;
+  } else {
+    event.preventDefault();
+    var dilute = ounces / ratio;
+    var amount = ounces - dilute;
+    materialAmount.innerText = Math.round(dilute) + " Ounces";
+    dilutionAmount.innerText = Math.round(amount) + " Ounces";
+  }
+});
+};
+})();
