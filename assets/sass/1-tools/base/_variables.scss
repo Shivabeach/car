@@ -15,7 +15,7 @@ $viewport-background-color: $white;
 
 :root {
   // Typography
-  --font-family: system-ui, sans-serif;
+  --font-family: $concert;
   --font-family--heading: var(--font-family);
 
   --font-weight--thin: 100;
