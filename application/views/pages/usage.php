@@ -8,7 +8,7 @@
 	  <div class="container--left">
 	    <div class="card">
 	      <div class="card--inside">
-	        <div class="card--inside-header fs-4">list</div>
+	        <h2 class="card--inside-header">list</h2>
 	         <?php include"equip.html";?>
 	    	</div>
 	 	 </div>
@@ -16,7 +16,7 @@
 	  <div class="container--main">
 	    <div class="card">
 	     	<div class="card--inside">
-	       	<div class="card--inside-header fs-4">Usage Ratios</div>
+	       	<h2 class="card--inside-header">Usage Ratios</h2>
 	       	<table>
             <thead>
               <tr>
@@ -61,6 +61,22 @@
                 <td class="center">3</td>
                 <td class="center">27</td>
               </tr>
+              <tr>
+                <td class="center">Meguiars Super Degreaser</td>
+                <td class="center">Spray</td>
+                <td class="center">20</td>
+                <td class="center">1 : 4</td>
+                <td class="center">4</td>
+                <td class="center">16</td>
+              </tr>
+              <tr>
+                <td class="center">Angelwax Cleanliness</td>
+                <td class="center">Foam Cannon</td>
+                <td class="center">30</td>
+                <td class="center">1 : 3</td>
+                <td class="center">10</td>
+                <td class="center">20</td>
+              </tr>
             </tbody>
           </table>
 	    </div>
@@ -70,7 +86,7 @@
 		<div class="container--right">
 	    <div class="card">
 	     	<div class="card--inside">
-	       	<div class="card--inside-header fs-4">Response</div>
+	       	<h2 class="card--inside-header">Calculate</h2>
 	       	<div class="display success"></div>
           <form>
             <div class="input-row">

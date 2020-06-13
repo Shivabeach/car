@@ -9,7 +9,7 @@
     <div class="container--left">
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4">Blog Index</div>
+          <h2 class="card--inside-header">Blog Index</h2>
           <ol>
           <?php
           foreach($blog as $row):?>
@@ -20,7 +20,7 @@
       </div>
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4">The Subject</div>
+          <h2 class="card--inside-header">The Subject</h2>
           <?php
           foreach($cost as $row):
             $total = round($row->total, 2);
@@ -42,7 +42,7 @@
 
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4" id="<?=$row->id;?>"><?=$row->heading;?></div>
+          <h2 class="card--inside-header" id="<?=$row->id;?>"><?=$row->heading;?></h2>
           <?php echo "<h5 class='date'>" . nice_date($row->date, 'F d, Y') . "</h5>";?>
           <?php echo $this->typography->auto_typography($row->content);?>
         </div>

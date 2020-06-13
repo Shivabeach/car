@@ -5,7 +5,7 @@
 
 let buy = document.querySelector("#buy");
 let listing = document.querySelector(".listing");
-const car = [];
+let car = [];
 let storedData = localStorage.getItem("car");
 if (storedData !== null) {
 	car = JSON.parse(storedData);

@@ -65,4 +65,26 @@ class Pages extends CI_Controller {
     $this->load->view("template/template", $data);
   }
 
+  public function bought() {
+    $tmpl = array('table_open' => '<table cellpadding="5" cellspacing="5" class="display">', 'row_start' =>
+    '<tr class="cent">', 'row_alt_start' => '<tr class="cent">', 'table_close' => '</table>');
+    $this->table->set_template($tmpl);
+    if($query = $this->general->display())
+    {
+      $data['display'] = $query;
+    }
+    $data['title']   = "Product Purchased";
+    $data['header']  = "Purchased Product";
+    $data['content'] = "pages/bought";
+    $this->load->view("template/template", $data);
+  }
+  public function search()
+  {
+    if($query = $this->general->searched())
+    {
+      $data['found'] = $query;
+    }
+    $data['title'] = "Search";
+  }
+
 }

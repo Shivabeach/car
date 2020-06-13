@@ -10,7 +10,7 @@
     <div class="container--left">
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4">Instant Detailers</div>
+          <h2 class="card--inside-header">Instant Detailers</h2>
           <ol>
             <li>Optimum Instant detail Spray</li>
             <li>Kenotech Showroom Shine</li>
@@ -24,7 +24,7 @@
       </div>
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4">Coatings & Sealants</div>
+          <h2 class="card--inside-header">Coatings & Sealants</h2>
           <ol>
             <li>Jescar Power-lock</li>
             <li><b>Carpro</b> Hydro2</li>
@@ -36,7 +36,7 @@
       </div>
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4">Windows</div>
+          <h2 class="card--inside-header">Windows</h2>
           <ol>
             <li><b>Carpro</b> Clarify cleaner</li>
             <li>Angelwax H2GO Sealant</li>
@@ -49,7 +49,7 @@
     <div class="container--main">
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4">Wash Products</div>
+          <h2 class="card--inside-header">Wash Products</h2>
             <ol>
               <li><b>Carpro</b> Reset *****</li>
               <li>Poorboys World Super Slick & Suds</li>
@@ -62,7 +62,7 @@
 
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4">Wheels</div>
+          <h2 class="card--inside-header">Wheels</h2>
             <ol>
               <li>Adams Wheel & Tire Cleaner</li>
             </ol>
@@ -70,7 +70,7 @@
       </div>
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4">Interior</div>
+          <h2 class="card--inside-header">Interior</h2>
             <ol>
               <li>Angelwax Enigma Interno Ceramic Trim Dressing</li>
               <li>Chemical Guys Inner Clean</li>
@@ -81,7 +81,7 @@
       </div>
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4">Trim</div>
+          <h2 class="card--inside-header">Trim</h2>
             <ol>
               <li>BLAK Once a Year - Black trim & Tires</li>
               <li>Solution Finish - Trim and Tires</li>
@@ -91,7 +91,7 @@
       </div>
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4">Polish Prep</div>
+          <h2 class="card--inside-header">Polish Prep</h2>
             <ol>
               <li>Angelwax Stripped-Ease</li>
               <li><b>CarPro</b> Eraser</li>
@@ -108,7 +108,7 @@
       </div>
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4">Polish</div>
+          <h2 class="card--inside-header">Polish</h2>
           <ol>
             <li>Angelwax Redemption - Finishing</li>
             <li>Maguiars Mirror Glaze #83 Cleaner/Polish</li>
@@ -122,7 +122,7 @@
       </div>
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4">Cleaners</div>
+          <h2 class="card--inside-header">Cleaners</h2>
           <ol>
             <ol>
               <li>3D Orange Degreaser</li>

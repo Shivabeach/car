@@ -19,6 +19,28 @@ class General extends CI_Model {
 		$query = $this->db->get("costs");
 		return $query->result();
 	}
+
+	public function display() {
+		$this->db->select("material, type, company, unit, quantity");
+		$this->db->order_by("type", "asc");
+		$query = $this->db->get("costs");
+		return $query->result();
+	}
+
+	public function searched()
+	{
+		$value = trim($this->input->post("search"));
+		$this->db->select("material, type, company");
+		$this->db->like("material", $value);
+		$this->db->or_like("type", $value);
+		$this->db->or_like("company", $value);
+		$this->db->group_by("type");
+		$randy = $this->db->get("costs");
+		return $randy->result();
+
+
+
+	}
 }
 
 /* End of file General.php */

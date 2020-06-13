@@ -8,15 +8,21 @@
   min-height: 100px
   display: flex
   border-radius: $base-border-radius
+  +tablet
+    flex-wrap: wrap
+    min-width: 90%
 
+  +mobile
+    flex-wrap: wrap
+    min-width: 90%
 
   &--inside
     padding: 5px
     width: 100%
 
     p
-      font-size: 1.0vw
       font-family: $opensans
+
 
     &-header
       border-radius: $base-border-radius
@@ -26,7 +32,6 @@
       +center(center, center)
       margin-bottom: 1rem
       font-family: $concert
-
 
 .card2
   flex: 1

@@ -3,7 +3,7 @@
 	  <div class="container--left">
 	    <div class="card">
 	      <div class="card--inside">
-	        <div class="card--inside-header fs-4">list</div>
+	        <h2 class="card--inside-header">list</h2>
 	         <?php include"equip.html";?>
 	    	</div>
 	 	 </div>
@@ -11,7 +11,7 @@
 	  <div class="container--main">
 	    <div class="card">
 	     	<div class="card--inside">
-	       	<div class="card--inside-header fs-4">Purchased Equipment</div>
+	       	<h2 class="card--inside-header">Purchased Equipment</h2>
 	       	<!-- Purchasing form -->
 	        		<?php
 	        		$formid = [
@@ -96,7 +96,7 @@
 	        		?>
 
 	        <?php echo str_repeat("<br>", 2);?>
-	        <div class="card--inside-header fs-4">Blog Form</div>
+	        <h2 class="card--inside-header">Blog Form</h2>
 	        <!-- Blog form -->
 	        <?php
 	        	$form = [
@@ -132,7 +132,7 @@
 	    </div>
 	    <div class="card">
 	     	<div class="card--inside">
-	       	<div class="card--inside-header fs-4">Calendar Form</div>
+	       	<h2 class="card--inside-header">Calendar Form</h2>
 	       		<?php
 	       			$form = [
 	       				"class" => "cars"
@@ -164,7 +164,7 @@
 		<div class="container--right">
 	    <div class="card">
 	     	<div class="card--inside">
-	       	<div class="card--inside-header fs-4">Response</div>
+	       	<h2 class="card--inside-header">Response</h2>
 	       	<div class="display success"></div>
 	       	<div>
 	       		['reset']   = "Carpro Reset";<br>

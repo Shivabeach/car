@@ -10,7 +10,7 @@
     <div class="container--left"> <!-- Left side container -->
       <div class="card">
         <div class="card--inside">
-          <div class="card--inside-header fs-4">Equipment List</div>
+          <h2 class="card--inside-header">Equipment List</h2>
           <?php include "equip.html";?>
       </div>
 
@@ -20,7 +20,7 @@
   <div class="container--main"> <!-- middle or right container -->
 	  <div class="card">
 	    <div class="card--inside">
-	      <div class="card--inside-header fs-4">Wanted or Needed Product</div>
+	      <h2 class="card--inside-header">Wanted or Needed Product</h2>
 	      <p></p>
 	      <table>
           <thead>
@@ -43,7 +43,7 @@
   <div class="container--right">
     <div class="card">
      	<div class="card--inside">
-       	<div class="card--inside-header fs-4">Purchase Form</div>
+       	<h2 class="card--inside-header">Purchase Form</h2>
        		<?php
        		$form = [
        			"id" => "buy"

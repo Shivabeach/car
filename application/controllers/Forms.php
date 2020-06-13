@@ -81,6 +81,14 @@ class Forms extends CI_Controller {
 		}
 	}
 
+	public function search() {
+		if($query = $this->general->searched())
+		{
+			$data['found'] = $query;
+		}
+
+	}
+
 }
 
 /* End of file Forms.php */

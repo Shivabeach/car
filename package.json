@@ -7,7 +7,8 @@
   "author": "<shiva@shivabeach.com>",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.5.0"
+    "jquery": "^3.5.0",
+    "rfs": "^9.0.3"
   },
   "devDependencies": {
     "prettier": "^1.19.1"

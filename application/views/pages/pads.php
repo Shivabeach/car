@@ -9,7 +9,7 @@
   <div class="container--left">
     <div class="card">
       <div class="card--inside">
-        <div class="card--inside-header fs-4">Equipment list</div>
+        <h2 class="card--inside-header">Equipment list</h2>
         <?php include"equip.html";?>
       </div>
     </div>
@@ -18,7 +18,7 @@
   <div class="container--main">
     <div class="card">
       <div class="card--inside">
-        <div class="card--inside-header fs-4">Polish Pads</div>
+        <h2 class="card--inside-header">Polish Pads</h2>
         <table>
           <thead>
             <tr>

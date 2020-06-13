@@ -1,7 +1,7 @@
 //use form to enter budget number for display
 //based on Traversy BookList https://www.youtube.com/watch?v=JaMCxVWtW58&t=1548s
 
-class Cost {
+class Detail {
 	constructor(product, reason) {
 		this.product = product;
 		this.reason = reason;
@@ -10,17 +10,17 @@ class Cost {
 
 class UI {
 	static displayCosts() {
-		const costs = Store.getCosts();
-		costs.forEach(cost => UI.addExpenseToList(cost));
+		const towel = Store.getCosts();
+		towel.forEach(detail => UI.addExpenseToList(detail));
 	}
 
-	static addExpenseToList(cost) {
+	static addExpenseToList(detail) {
 		const list = document.querySelector('.disp');
 		const row = document.createElement('tr');
 
 		row.innerHTML = `
-      <td>${cost.product}</td>
-      <td>${cost.reason}</td>
+      <td>${detail.product}</td>
+      <td>${detail.reason}</td>
       <td><a href="#" class="btn delete">X</a></td>`;
 		list.appendChild(row);
 	}
@@ -53,29 +53,30 @@ class UI {
 class Store {
 	// retrieve costs from local storage
 	static getCosts() {
-		let costs;
-		if (localStorage.getItem('costs') === null) {
-			costs = [];
+		let towel;
+		if (localStorage.getItem('towel') === null) {
+			towel = [];
 		} else {
-			costs = JSON.parse(localStorage.getItem('costs'));
+			towel = JSON.parse(localStorage.getItem('towel'));
 		}
-		return costs;
+		return towel;
 	}
 	// input added costs into array in local storage
-	static addCosts(cost) {
-		const costs = Store.getCosts();
-		costs.push(cost);
-		localStorage.setItem('costs', JSON.stringify(costs));
+	static addCosts(detail) {
+		const towel = Store.getCosts();
+		towel.push(detail);
+		localStorage.setItem('towel', JSON.stringify(towel));
 	}
 	// remove costs from array in local storage
 	static removeBook(reason) {
-		const costs = Store.getCosts();
-		costs.forEach((cost, index) => {
-			if (cost.reason === reason) {
-				costs.splice(index, 1);
+		const towel = Store.getCosts();
+		towel.forEach((detail, index) => {
+			if (detail.reason === reason) {
+				console.log(detail.reason);
+				towel.splice(index, 1);
 			}
 		});
-		localStorage.setItem('costs', JSON.stringify(costs));
+		localStorage.setItem('towel', JSON.stringify(towel));
 	}
 } // end of store
 
@@ -91,9 +92,9 @@ document.getElementById('buy').addEventListener('submit', e => {
 		alert('Product is not filled');
 	} else {
 		// showAlert for missing values in form here eventually
-		const cost = new Cost(product, reason);
-		UI.addExpenseToList(cost); //works
-		Store.addCosts(cost);
+		const detail = new Detail(product, reason);
+		UI.addExpenseToList(detail); //works
+		Store.addCosts(detail);
 		UI.clearFields();
 	}
 });
