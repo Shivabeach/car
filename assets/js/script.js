@@ -96,3 +96,19 @@ $(function() {
 	}
 })();
 
+$(function(){
+  $(".highlight").parent().css({"background-color": "#CA915B", "border": "1px solid #803e27"});
+});
+
+ let arg = [
+	"I",
+	"cant",
+	"Breathe"
+]
+let hege = [
+	"any",
+	"more"
+]
+let arg1 = arg.concat(hege);
+let x = document.getElementById("dem")
+x.innerHTML = arg1.join(" ");

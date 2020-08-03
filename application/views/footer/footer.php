@@ -1,7 +1,8 @@
 <footer>
+  <a href="#"></a>
   <menu>
     <ul>
-      <li><?php echo anchor("/", "Home");?></li>
+      <li id="section2"><?php echo anchor("/", "Home");?></li>
       <li><?php echo anchor('pages/polish', 'Polish Pads')?>  </li>
       <li><?php echo anchor("calendar/display", "Calendar");?></li>
       <li><?php echo anchor("pages/forms", "Forms");?></li>

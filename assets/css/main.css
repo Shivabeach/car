@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Config */
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Open+Sans&family=Righteous&family=Space+Mono:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
@@ -19,6 +20,12 @@ body {
 /* Color Theme Swatches in Hex */
 /* Color Theme Swatches in RGBA */
 /* Color Theme Swatches in HSLA */
+:root {
+  --blue: #0000ff;
+  --red: #FF0000;
+}
+
+/* From base */
 :root {
   --font-family: $concert;
   --font-family--heading: var(--font-family);
@@ -450,7 +457,7 @@ a {
 }
 a:visited {
   color: #8e24aa;
-  font-family: "Fredoka One", cursive;
+  font-family: "Space Mono", monospace;
 }
 a:hover {
   color: #5B4C4A;
@@ -470,6 +477,7 @@ a:focus, a :active {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  color: var(--blue);
 }
 
 .error {
@@ -807,6 +815,13 @@ input:focus::placeholder {
   margin-bottom: 1rem;
 }
 
+button[type=submit] {
+  background: #3226B5;
+}
+button[type=submit]:hover {
+  background: #594eda;
+}
+
 /* Gradients */
 .example {
   background: -o-radial-gradient(top left, circle, #bac8ff 15%, #748ffc 5%, #5c7cfa, #4c6ef5, #4263eb, #364fc7);
@@ -875,8 +890,8 @@ button[type=submit] {
   padding: 0.5rem 1.5rem;
   text-decoration: none;
   text-align: center;
-  background-color: #00ff00;
-  color: black;
+  background-color: #3226B5;
+  color: #fff;
   -webkit-transition-duration: 0.4s;
        -o-transition-duration: 0.4s;
           transition-duration: 0.4s;
@@ -889,7 +904,7 @@ button[type=submit] {
   border: 1px solid #212529;
 }
 button[type=submit]:hover {
-  background-color: #c67e00;
+  background-color: #7431f2;
   -webkit-box-shadow: 2px 2px 2px #495057;
           box-shadow: 2px 2px 2px #495057;
 }
@@ -917,12 +932,7 @@ button[type=reset]:hover {
 
 /*lists */
 li {
-  font-size: calc(1.275rem + 0.3vw);
-}
-@media (min-width: 1200px) {
-  li {
-    font-size: 1.5rem;
-  }
+  font-size: 1.25rem;
 }
 
 .shopping-menu {
@@ -961,6 +971,10 @@ ol {
   margin-left: 0;
   padding-left: 0;
   list-style-position: inside;
+}
+
+.notation:before {
+  content: "➤ ";
 }
 
 /* Tables */
@@ -1014,13 +1028,17 @@ tr {
       -ms-flex: 1;
           flex: 1;
   margin: 1rem;
-  padding: 1rem 2rem;
+  padding: 1rem calc(1.325rem + 0.9vw);
   min-width: 25%;
-  min-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-radius: 6px;
+}
+@media (min-width: 1200px) {
+  .card {
+    padding: 1rem 2rem;
+  }
 }
 @media screen and (min-width: 767px) and (max-width: 1023px) {
   .card {
@@ -1066,13 +1084,18 @@ tr {
       -ms-flex: 1;
           flex: 1;
   border-right: none;
-  padding: 1rem 2rem;
+  padding: 1rem calc(1.325rem + 0.9vw);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+@media (min-width: 1200px) {
+  .card2 {
+    padding: 1rem 2rem;
+  }
 }
 
 .main-title {
@@ -1118,9 +1141,9 @@ tr {
   }
 }
 .container--main {
-  -webkit-box-flex: 3;
-      -ms-flex: 3;
-          flex: 3;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

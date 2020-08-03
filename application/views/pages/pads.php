@@ -9,6 +9,7 @@
   <div class="container--left">
     <div class="card">
       <div class="card--inside">
+      <a href="#section2">Menu</a>
         <h2 class="card--inside-header">Equipment list</h2>
         <?php include"equip.html";?>
       </div>
@@ -147,7 +148,7 @@
               <td class="gray">50-50 Microfiber</td>
               <td>Griots Correcting Creme</td>
               <td>All</td>
-              <td>2</td>
+              <td>4</td>
             </tr>
           </tbody>
         </table>

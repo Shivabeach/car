@@ -8,6 +8,7 @@
 	  <div class="container--left">
 	    <div class="card">
 	      <div class="card--inside">
+        <a href="#section2">Menu</a>
 	        <h2 class="card--inside-header">Search</h2>
             <?php
               $open = [
@@ -29,7 +30,7 @@
               echo form_submit("Submit", "Post it", $sub);
               echo form_close();
             ?>
-
+          <div class="wrapper">This should be blue</div>
 	    	</div>
 	 	 </div>
 		</div>

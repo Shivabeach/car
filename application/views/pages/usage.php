@@ -8,6 +8,7 @@
 	  <div class="container--left">
 	    <div class="card">
 	      <div class="card--inside">
+        <a href="#section2">Menu</a>
 	        <h2 class="card--inside-header">list</h2>
 	         <?php include"equip.html";?>
 	    	</div>
@@ -76,6 +77,14 @@
                 <td class="center">1 : 3</td>
                 <td class="center">10</td>
                 <td class="center">20</td>
+              </tr>
+              <tr>
+                <td class="center">Ech2o</td>
+                <td class="center">Spray Bottle</td>
+                <td class="center">17</td>
+                <td class="center">1 : 15</td>
+                <td class="center">2</td>
+                <td class="center">15</td>
               </tr>
             </tbody>
           </table>
