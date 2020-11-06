@@ -1,0 +1,26 @@
+doctype html
+html lang-en
+  head
+    title Car Notes
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="assets/css/main.min.css")
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
+
+body
+  header(class="header") My header
+  main(class="container")
+    .container--left
+      .container--inner
+        h3 Notes from the Workspace
+        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, amet?
+    .container--main
+      form(action='#' method='method')
+        .form-group
+          label(for='email') Email
+          input.form-control(type='email', name='email' placeholder='Email' autofocus=true)
+        .form-group
+          label(for='password') Password
+          input.form-control(type='password', name='{:password}')
+        button.btn.btn-primary(type='submit') Log-in
+
