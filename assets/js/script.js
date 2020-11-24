@@ -97,7 +97,7 @@ $(function() {
 })();
 
 $(function(){
-  $(".highlight").parent().css({"background-color": "#CA915B", "border": "1px solid #803e27"});
+	$(".highlight").parent().css({"background-color": "#CA915B", "border": "1px solid #803e27"});
 });
 
  let arg = [
