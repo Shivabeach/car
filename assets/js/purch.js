@@ -1,37 +1,37 @@
+/** @format */
+
 //use form to enter budget number for display
 //based on Traversy BookList https://www.youtube.com/watch?v=JaMCxVWtW58&t=1548s
 
 class Detail {
-	constructor(product, reason) {
-		this.product = product;
-		this.reason = reason;
-	}
+  constructor(product) {
+    this.product = product;
+  }
 }
 
 class UI {
-	static displayCosts() {
-		const towel = Store.getCosts();
-		towel.forEach(detail => UI.addExpenseToList(detail));
-	}
+  static displayCosts() {
+    const towel = Store.getCosts();
+    towel.forEach((detail) => UI.addExpenseToList(detail));
+  }
 
-	static addExpenseToList(detail) {
-		const list = document.querySelector('.disp');
-		const row = document.createElement('tr');
+  static addExpenseToList(detail) {
+    const list = document.querySelector('.disp');
+    const row = document.createElement('tr');
 
-		row.innerHTML = `
+    row.innerHTML = `
       <td>${detail.product}</td>
-      <td>${detail.reason}</td>
       <td><a href="#" class="btn delete">X</a></td>`;
-		list.appendChild(row);
-	}
+    list.appendChild(row);
+  }
 
-	static deleteBook(el) {
-		if (el.classList.contains('delete')) {
-			el.parentElement.parentElement.remove();
-		}
-	}
+  static deleteBook(el) {
+    if (el.classList.contains('delete')) {
+      el.parentElement.parentElement.remove();
+    }
+  }
 
-	static showAlert(message, className) {
+  static showAlert(message, className) {
     const div = document.createElement('div');
     div.className = `alert alert-${className}`;
     div.appendChild(document.createTextNode(message));
@@ -43,70 +43,65 @@ class UI {
     setTimeout(() => document.querySelector('.alert').remove(), 3000);
   }
 
-	static clearFields() {
-		document.querySelector('#product').value = '';
-		document.querySelector('#reason').value = '';
-	}
-
+  static clearFields() {
+    document.querySelector('#product').value = '';
+  }
 } // End of UI class
 
 class Store {
-	// retrieve costs from local storage
-	static getCosts() {
-		let towel;
-		if (localStorage.getItem('towel') === null) {
-			towel = [];
-		} else {
-			towel = JSON.parse(localStorage.getItem('towel'));
-		}
-		return towel;
-	}
-	// input added costs into array in local storage
-	static addCosts(detail) {
-		const towel = Store.getCosts();
-		towel.push(detail);
-		localStorage.setItem('towel', JSON.stringify(towel));
-	}
-	// remove costs from array in local storage
-	static removeBook(reason) {
-		const towel = Store.getCosts();
-		towel.forEach((detail, index) => {
-			if (detail.reason === reason) {
-				console.log(detail.reason);
-				towel.splice(index, 1);
-			}
-		});
-		localStorage.setItem('towel', JSON.stringify(towel));
-	}
+  // retrieve costs from local storage
+  static getCosts() {
+    let towel;
+    if (localStorage.getItem('towel') === null) {
+      towel = [];
+    } else {
+      towel = JSON.parse(localStorage.getItem('towel'));
+    }
+    return towel;
+  }
+  // input added costs into array in local storage
+  static addCosts(detail) {
+    const towel = Store.getCosts();
+    towel.push(detail);
+    localStorage.setItem('towel', JSON.stringify(towel));
+  }
+  // remove costs from array in local storage
+  static removeBook(reason) {
+    const towel = Store.getCosts();
+    towel.forEach((detail, index) => {
+      if (detail.product === product) {
+        console.log(detail.product);
+        towel.splice(index, 1);
+      }
+    });
+    localStorage.setItem('towel', JSON.stringify(towel));
+  }
 } // end of store
-
 
 document.addEventListener('DOMContentLoaded', UI.displayCosts());
 
-document.getElementById('buy').addEventListener('submit', e => {
-	e.preventDefault();
-	const product = document.querySelector('#product').value;
-	const reason = document.querySelector('#reason').value;
+document.getElementById('buy').addEventListener('submit', (e) => {
+  e.preventDefault();
+  const product = document.querySelector('#product').value;
 
-	if (product === '') {
-		alert('Product is not filled');
-	} else {
-		// showAlert for missing values in form here eventually
-		const detail = new Detail(product, reason);
-		UI.addExpenseToList(detail); //works
-		Store.addCosts(detail);
-		UI.clearFields();
-	}
+  if (product === '') {
+    alert('Product is not filled');
+  } else {
+    // showAlert for missing values in form here eventually
+    const detail = new Detail(product);
+    UI.addExpenseToList(detail); //works
+    Store.addCosts(detail);
+    UI.clearFields();
+  }
 });
 
-document.querySelector('.disp').addEventListener('click', e => {
-	// Remove book from UI
-	UI.deleteBook(e.target);
+document.querySelector('.disp').addEventListener('click', (e) => {
+  // Remove book from UI
+  UI.deleteBook(e.target);
 
-	// Remove book from store
-	Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
+  // Remove book from store
+  Store.removeBook(e.target.parentElement.previousElementSibling.textContent);
 
-	// Show success message
-	//UI.showAlert('Book Removed', 'success');
+  // Show success message
+  //UI.showAlert('Book Removed', 'success');
 });
-

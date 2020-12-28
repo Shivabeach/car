@@ -27,7 +27,6 @@
           <thead>
             <tr>
               <th>Needed</th>
-              <th>Usage</th>
               <th>Delete</th>
             </tr>
           </thead>
@@ -50,24 +49,21 @@
        			"id" => "buy"
        		];
        		echo form_open("", $form);
-       		$product = [
+       		$pro = [
+            "type" => "text",
              "name"        => "product",
              "id"          => "product",
              "placeholder" => "Product Needed",
              "class"       => "input-full"
        		];
-       		echo form_input($product);
-          echo "<br>";
-          $why = [
-            "name"        => "reason",
-            "id"          => "reason",
-            "placeholder" => "Product usage",
-            "class"       => "input-full"
-          ];
-          echo form_input($why);
-          echo "<br>";
+       		echo form_input($pro);
+
        		echo "<div>";
-       		echo "<button type='submit' value='Submit'>Submit</button>";
+          $sub = [
+            "id" => "submit"
+          ];
+          echo form_submit($sub, "Submit");
+
        		echo "</div>";
        		echo form_close();
        	?>
