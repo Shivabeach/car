@@ -7,7 +7,7 @@ class General extends CI_Model {
 	public function blog()
 	{
 		$this->db->select("id, date, heading, content");
-		$this->db->order_by('date', 'asc');
+		$this->db->order_by('date', 'desc');
 		$query = $this->db->get("blog");
 		return $query->result();
 	}

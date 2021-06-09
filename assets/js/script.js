@@ -1,5 +1,4 @@
 /** @format */
-
 // response requires an ID
 let materialAmount = document.getElementById('materialAmount');
 let dilutionAmount = document.getElementById('dilutionAmount');
@@ -68,13 +67,6 @@ $(function() {
     return false;
   });
 });
-//jquery datepicker
-// $(function() {
-//   'use strict';
-//   $('.date').datepicker({
-//     dateFormat: 'yy-mm-dd',
-//   });
-// });
 
 (function() {
   'use strict';
@@ -103,16 +95,14 @@ $(function() {
     .parent()
     .css({ 'background-color': '#CA915B', border: '1px solid #803e27' });
 });
-
-//  let arg = [
-// 	"I",
-// 	"cant",
-// 	"Breathe"
-// ]
-// let hege = [
-// 	"any",
-// 	"more"
-// ]
-// let arg1 = arg.concat(hege);
-// let x = document.getElementById("dem")
-// x.innerHTML = arg1.join(" ");
+//jquery datepicker
+$(function() {
+  $('#date').datepicker({
+    dateFormat: 'yy-mm-dd',
+  });
+});
+// $(function() {
+//   $('#date2').datepicker({
+//     dateFormat: 'yy-mm-dd',
+//   });
+// });

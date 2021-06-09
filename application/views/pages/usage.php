@@ -4,21 +4,21 @@
       <h1><?=$header;?></h1>
     </hgroup>
   </header>
-<div class="container">
-	  <div class="container--left">
-	    <div class="card">
-	      <div class="card--inside">
-        <a href="#section2">Menu</a>
-	        <h2 class="card--inside-header">list</h2>
-	         <?php include"equip.html";?>
-	    	</div>
-	 	 </div>
-		</div>
-	  <div class="container--main">
-	    <div class="card">
-	     	<div class="card--inside">
-	       	<h2 class="card--inside-header">Usage Ratios</h2>
-	       	<table>
+  <div class="container">
+    <div class="container--left">
+      <div class="card">
+        <div class="card--inside">
+          <a href="#section2">Menu</a>
+          <h2 class="card--inside-header">list</h2>
+          <?php include"equip.html";?>
+        </div>
+      </div>
+    </div>
+    <div class="container--main">
+      <div class="card">
+        <div class="card--inside">
+          <h2 class="card--inside-header">Usage Ratios</h2>
+          <table>
             <thead>
               <tr>
                 <th class="center">Mix For</th>
@@ -86,17 +86,25 @@
                 <td class="center">2</td>
                 <td class="center">15</td>
               </tr>
+              <tr>
+                <td class="center">Gyeon Foam</td>
+                <td class="center">Foam Cannon #2</td>
+                <td class="center">28</td>
+                <td class="center">1 : 5</td>
+                <td class="center">6</td>
+                <td class="center">22</td>
+              </tr>
             </tbody>
           </table>
-	    </div>
+        </div>
 
-		</div>
-		</div>
-		<div class="container--right">
-	    <div class="card">
-	     	<div class="card--inside">
-	       	<h2 class="card--inside-header">Calculate</h2>
-	       	<div class="display success"></div>
+      </div>
+    </div>
+    <div class="container--right">
+      <div class="card">
+        <div class="card--inside">
+          <h2 class="card--inside-header">Calculate</h2>
+          <div class="display success"></div>
           <form>
             <div class="input-row">
               <label for="ounces">Number of Ounces To Fill</label>
@@ -109,14 +117,14 @@
             <input type="submit" class="none" id="cripes" value="Submit">
             <input type="reset" class="none" value="Do Over" id="reset1">
           </form>
-            <div class="input-row">
-              <div id="validity"></div>
-              <p class="emp">Dilutable Material <span class="bold-10 bold-blue" id="materialAmount"> </span> </p>
-            </div>
-            <div class="input-row">
-              <p class="emp">Water <span class="bold-10 bold-blue" id="dilutionAmount"> </span> </p>
-            </div>
-	      </div>
-	    </div>
-	  </div>
-	</div> <!-- End of container -->
+          <div class="input-row">
+            <div id="validity"></div>
+            <p class="emp">Dilutable Material <span class="bold-10 bold-blue" id="materialAmount"> </span> </p>
+          </div>
+          <div class="input-row">
+            <p class="emp">Water <span class="bold-10 bold-blue" id="dilutionAmount"> </span> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End of container -->

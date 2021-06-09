@@ -17,6 +17,13 @@ function create() {
   }
 }
 
+function retrieve() {
+  const retrieve = localStorage.getItem('car');
+  return retrieve;
+}
+
+function display() {}
+
 function addToList(needs) {
   shopping.push(needs);
   localStorage.setItem('car', JSON.stringify(shopping));

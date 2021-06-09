@@ -19,11 +19,11 @@
   </div>
     <!-- ------------------------------------------------- -->
   <div class="container--main"> <!-- middle or right container -->
-	  <div class="card">
-	    <div class="card--inside">
-	      <h2 class="card--inside-header">Wanted or Needed Product</h2>
-	      <p></p>
-	      <table>
+    <div class="card">
+      <div class="card--inside">
+        <h2 class="card--inside-header">Wanted or Needed Product</h2>
+        <p></p>
+        <table>
           <thead>
             <tr>
               <th>Needed</th>
@@ -36,39 +36,41 @@
         <ul class="listing">
           <li>Color</li>
         </ul>
-	    </div>
-	  </div>
+      </div>
+    </div>
 
 </div>
   <div class="container--right">
     <div class="card">
-     	<div class="card--inside">
-       	<h2 class="card--inside-header">Purchase Form</h2>
-       		<?php
-       		$form = [
-       			"id" => "buy"
-       		];
-       		echo form_open("", $form);
-       		$pro = [
+       <div class="card--inside">
+         <h2 class="card--inside-header">Purchase Form</h2>
+           <?php
+           $form = [
+             "id" => "buy"
+           ];
+           echo form_open("", $form);
+           $pro = [
             "type" => "text",
              "name"        => "product",
              "id"          => "product",
              "placeholder" => "Product Needed",
-             "class"       => "input-full"
-       		];
-       		echo form_input($pro);
+             "class"       => "input-full",
+             "autocomplete" => "on"
+           ];
+           echo form_input($pro);
 
-       		echo "<div>";
+           echo "<div>";
           $sub = [
             "id" => "submit"
           ];
           echo form_submit($sub, "Submit");
 
-       		echo "</div>";
-       		echo form_close();
-       	?>
-       	<div class="display success"></div>
+           echo "</div>";
+           echo form_close();
+         ?>
+         <div class="display success"></div>
       </div>
     </div>
   </div>
+  <script src="<?php echo base_url('assets/js/newPurchase.js');?>" defer></script>
 </div>

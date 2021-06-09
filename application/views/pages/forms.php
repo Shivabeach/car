@@ -140,9 +140,11 @@
 	       			];
 	       			echo form_open('forms/calendar',$form);
 	       			$date = [
+									"id" => "date2",
 									"class"       => "date",
 									"name"        => "date",
-									"placeholder" => "Date"
+									"placeholder" => "Date",
+									"type" => "date"
 	       			];
 	       			echo "<div>";
 	       			echo form_input($date);
