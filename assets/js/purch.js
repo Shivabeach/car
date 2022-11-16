@@ -2,7 +2,12 @@
 
 //use form to enter budget number for display
 //based on Traversy BookList https://www.youtube.com/watch?v=JaMCxVWtW58&t=1548s
-
+/**
+ * @description
+ * @author Brad
+ * @date 2021-06-10
+ * @class Detail
+ */
 class Detail {
   constructor(product) {
     this.product = product;
@@ -20,8 +25,8 @@ class UI {
     const row = document.createElement('tr');
 
     row.innerHTML = `
-      <td>${detail.product}</td>
-      <td><a href="#" class="btn delete">X</a></td>`;
+			<td>${detail.product}</td>
+			<td><a href="#" class="btn delete">X</a></td>`;
     list.appendChild(row);
   }
 

@@ -14,7 +14,7 @@
           <ol>
           <?php
           foreach($blog as $row):?>
-            <li class="notation"><a href="#<?=$row->id;?>"><?=$row->heading;?></a></li>
+            <li class="notation blog-title"><a href="#<?=$row->id;?>"><?=$row->heading;?></a></li>
           <?php endforeach; ?>
         </ol>
         <div id="dem"></div>
@@ -44,7 +44,7 @@
 
       <div class="card">
         <div class="card--inside">
-          <h2 class="card--inside-header" id="<?=$row->id;?>"><?=$row->heading;?></h2>
+          <h2 class="card--inside-header blog-title" id="<?=$row->id;?>"><?=$row->heading;?></h2>
           <?php echo "<h5 class='date'>" . nice_date($row->date, 'F d, Y') . "</h5>";?>
           <?php echo $this->typography->auto_typography($row->content);?>
         </div>

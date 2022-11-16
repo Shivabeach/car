@@ -47,36 +47,12 @@
                 <td class="center">31</td>
               </tr>
               <tr>
-                <td class="center">Griots Surface Wash</td>
-                <td class="center">Foam Cannon #3</td>
-                <td class="center">30</td>
-                <td class="center">1 : 13</td>
-                <td class="center">2</td>
-                <td class="center">28</td>
-              </tr>
-              <tr>
-                <td class="center">Angelwax Fast Foam</td>
-                <td class="center">Foam Cannon #3</td>
-                <td class="center">30</td>
-                <td class="center">1 : 9</td>
-                <td class="center">3</td>
-                <td class="center">27</td>
-              </tr>
-              <tr>
                 <td class="center">Meguiars Super Degreaser</td>
                 <td class="center">Spray</td>
                 <td class="center">20</td>
                 <td class="center">1 : 4</td>
                 <td class="center">4</td>
                 <td class="center">16</td>
-              </tr>
-              <tr>
-                <td class="center">Angelwax Cleanliness</td>
-                <td class="center">Foam Cannon</td>
-                <td class="center">30</td>
-                <td class="center">1 : 3</td>
-                <td class="center">10</td>
-                <td class="center">20</td>
               </tr>
               <tr>
                 <td class="center">Ech2o</td>
@@ -93,6 +69,14 @@
                 <td class="center">1 : 5</td>
                 <td class="center">6</td>
                 <td class="center">22</td>
+              </tr>
+              <tr>
+                <td class="center">CarPro Lift</td>
+                <td class="center">IK Foam Cannon</td>
+                <td class="center">40</td>
+                <td class="center">1 : 10</td>
+                <td class="center">4</td>
+                <td class="center">36</td>
               </tr>
             </tbody>
           </table>
